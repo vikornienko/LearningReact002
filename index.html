@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App with JSX</title>
+  </head>
+  <body>
+    <div id="app-react"></div>
+        
+    
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+        
+    <!-- Create h1 element with JSX -->
+    <script type="text/babel">
+        // Create React component
+        const helloFromReactHeading = <h1>Hello world from JSX!</h1>
+        
+        // Find element with app id.
+        const container = document.getElementById('app-react')
+        // Create root element with ReactDOM.
+        const root = ReactDOM.createRoot(container)
+        // Component rendering
+        root.render(helloFromReactHeading)
+    </script>
+    
+  </body>
+</html>
